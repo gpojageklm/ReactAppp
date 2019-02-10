@@ -1,0 +1,11 @@
+FROM dreg.klm.com:5000/base/nodejs:8
+
+COPY public public/
+COPY scripts scripts/
+COPY server server/
+COPY src src/
+COPY package.json package.json
+
+user root
+user node
+RUN npm install --production --quiet

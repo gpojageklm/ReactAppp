@@ -1,0 +1,153 @@
+
+* {
+  box-sizing: border-box;
+  
+}
+body {
+    font-family: "Press Start 2P";
+}
+#container {
+  width: 400px;
+  margin: 100px auto;
+  border: solid 1px #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+#main {
+  height: 400px;
+  overflow: auto;
+  transform: rotate(360deg);
+}
+.new-message {
+    border-bottom: solid 1px black;
+    padding: 20px;
+    direction: ltr;
+}
+.send-message {
+  border: solid 1px #ccc;
+}
+ .send-message textarea {
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  padding: 10px;
+  resize: none;
+} 
+ .messages-list {
+    padding: 20px;
+    direction: ltr;
+    border-bottom: solid 1px black;
+} 
+
+.send-message button {
+  position: relative;
+  bottom: 0px;
+  left: 340px;
+}
+
+#sidebar {
+  grid-area: sidebar;
+  padding: 5px 0 0 5px;
+  border-right: 1px solid #3f3f3f;
+  height: 100%;
+}
+
+#input {
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+  background-color: white;
+  background-color: -moz-field;
+  border: 1px solid darkgray;
+  box-shadow: 1px 1px 1px 0 lightgray inset;  
+  font: -moz-field;
+  font: -webkit-small-control;
+  margin-top: 5px;
+  padding: 2px 3px;
+  width: 398px;    
+}
+
+#textarea {
+  -moz-appearance: textfield-multiline;
+  -webkit-appearance: textarea;
+  border: 1px solid gray;
+  font: medium -moz-fixed;
+  font: -webkit-small-control;
+  height: 28px;
+  overflow: auto;
+  padding: 2px;
+  resize: both;
+  width: 400px;
+}
+
+.wraping {
+  word-wrap: break-word;
+}
+
+#show-emoji-yes {
+  font-size: 20px;
+  opacity: 0.9;
+  position: relative;
+  bottom: 31%;
+  margin-left: 65%;
+}
+.emoji-table {
+  position: fixed;
+  bottom: 32%;
+  right: 37%;
+  opacity: 1;
+  display: flex;
+}
+.emoji-table:hover {
+  opacity: 0.9;
+}
+
+.date-style {
+  opacity: 0.8;
+  color: blue;
+  font-size: 12px;
+  font-style: italic;
+  float:right;
+}
+
+.authorSet {
+  font-size: 11px;
+  position: relative;
+  top: -15px;
+}
+
+.image-upload {
+  position: absolute;
+  top: 600px;
+  width: 28px;
+  height: 30px;
+}
+
+.image-upload > input {
+  visibility:hidden;
+  width:0;
+  height:0
+}
+
+.image-upload > img {
+  pointer-events: none;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.thumbnail {
+  width: 30%;
+  height: 30%;
+}
+
+.pdf {
+  overflow-x: hidden;
+}
+.pdfIcon {
+  width:34px;
+}
+.pdfAnchor {
+    position: relative;
+    bottom: 15px;
+    margin: 10px;
+    text-decoration: none;
+}

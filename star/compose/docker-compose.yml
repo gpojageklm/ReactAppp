@@ -1,0 +1,12 @@
+star:
+  image: dreg.klm.com:5000/st/star:$XLD_APP_VERSION
+  ports:
+   - "3000"
+  environment:
+   - "affinity:com.klm.social.star.version!=~$XLD_APP_VERSION"
+   - "SERVICE_3000_NAME=www.ite1.klm.com/socialmedia/star"
+   - "SERVICE_HEALTH=/socialmedia/star/"
+   - "SERVICE_MAXCONN=200"
+   - ENVIRONMENT=ite1
+  labels:
+   - "com.klm.social.star.version!=~$XLD_APP_VERSION"
